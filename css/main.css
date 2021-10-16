@@ -113,4 +113,12 @@ body main #container-clicks #container-colors #box-orange {
 body main #container-clicks #container-colors #box-grey {
   background-color: gray;
 }
+
+body main #container-clicks #container-colors .texto-click {
+  display: none;
+}
+
+body main #container-clicks #container-colors .texto-cor-desativado {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */

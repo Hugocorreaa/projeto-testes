@@ -3,28 +3,30 @@ var caixaBranca = document.getElementById('box-white')
 var caixaLaranja = document.getElementById('box-orange')
 var caixaCinza = document.getElementById('box-grey')
 
+[caixaPreta, caixaBranca, caixaLaranja, caixaCinza].forEach(element => {
+    element.addEventListener("mouseover", hover);
+    element.addEventListener("mouseout", out);
+    element.addEventListener("mousedown", click);
+    element.addEventListener("mouseup", desclick);
+    
+});
 
-caixaPreta.addEventListener("mouseenter", hover)
-caixaPreta.addEventListener("mouseout", out)
-caixaPreta.addEventListener("mousedown", click)
-caixaPreta.addEventListener("mouseup", desclick)
 
-
-function hover(){
-    caixaPreta.style.height = "12rem"
-    caixaPreta.style.width = "12rem"
+function hover(event){
+    event.target.style.height = "12rem"
+    event.target.style.width = "12rem"
 }
 
-function out(){
-    caixaPreta.style.height = "10rem"
-    caixaPreta.style.width = "10rem"
+function out(event){
+    event.target.style.height = "10rem"
+    event.target.style.width = "10rem"
 }
 
-function click(){
-    caixaPreta.innerHTML = "Clicou"
+function click(event){
+    event.target.innerHTML = "Clicou"
 }
 
-function desclick(){
-    caixaPreta.innerHTML = "Preto"
+function desclick(event){
+    event.target.innerHTML = "Preto"
 }
 
