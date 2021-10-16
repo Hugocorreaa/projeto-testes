@@ -1,0 +1,116 @@
+* {
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f0f8ff;
+  font-size: 150%;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header nav #logo a img {
+  width: 3rem;
+}
+
+body header nav #menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav #menu li {
+  padding: 1rem;
+}
+
+body header nav #menu li a {
+  color: #000;
+}
+
+body main {
+  height: auto;
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main #container-clicks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #container-clicks #container-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main #container-clicks #container-colors .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+body main #container-clicks #container-colors #box-black {
+  background-color: black;
+  color: white;
+}
+
+body main #container-clicks #container-colors #box-white {
+  background-color: white;
+}
+
+body main #container-clicks #container-colors #box-orange {
+  background-color: orange;
+}
+
+body main #container-clicks #container-colors #box-grey {
+  background-color: gray;
+}
+/*# sourceMappingURL=main.css.map */
