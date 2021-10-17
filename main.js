@@ -6,7 +6,6 @@ var textDisable = document.getElementsByClassName('texto-cor-desativado')
 for(let x=0; x<caixa.length; x++){
     caixa[x].addEventListener('mouseover', hover)
     caixa[x].addEventListener('mouseleave', out)
-
     caixa[x].addEventListener('mousedown', () => click(x))
     caixa[x].addEventListener('mouseup', () => desclick(x))
 }
