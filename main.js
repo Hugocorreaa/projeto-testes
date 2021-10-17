@@ -6,11 +6,12 @@ var textDisable = document.getElementsByClassName('texto-cor-desativado')
 for(let x=0; x<caixa.length; x++){
     caixa[x].addEventListener('mouseover', hover)
     caixa[x].addEventListener('mouseleave', out)
-    caixa[x].addEventListener('mousedown', click)
-    caixa[x].addEventListener('mouseup', desclick)
 
-
+    caixa[x].addEventListener('mousedown', () => click(x))
+    caixa[x].addEventListener('mouseup', () => desclick(x))
 }
+
+
 
 
 function hover(event){
@@ -23,16 +24,16 @@ function out(event){
     this.style.width = "10rem"
 }
 
-function click(event){
-    textDisable[0].style.display = "none"
-    textInitial[0].style.display = "none"
-    textClick[0].style.display = "block"
+function click(value){
+    textDisable[value].style.display = "none"
+    textInitial[value].style.display = "none"
+    textClick[value].style.display = "block"
 
     
 }
 
-function desclick(event){
-    textClick[0].style.display = "none"
-    textDisable[0].style.display = "block"
+function desclick(value){
+    textClick[value].style.display = "none"
+    textDisable[value].style.display = "block"
 }
 
