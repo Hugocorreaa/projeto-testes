@@ -1,3 +1,64 @@
+#container-fundo {
+  height: 60vh;
+  padding-top: 200px;
+  text-align: center;
+}
+
+#container-fundo #name {
+  border: 1px solid black;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container-fundo .verde {
+  background-color: cadetblue;
+}
+
+#container-fundo .vermelho {
+  background-color: crimson;
+}
+
+#container-fundo .azul {
+  background-color: darkslateblue;
+}
+
+#container-fundo #buttons {
+  padding-top: 20px;
+}
+
+#container-fundo #buttons .button {
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 10px;
+  height: 2rem;
+  width: 10rem;
+}
+
+#container-fundo #buttons #button-green {
+  background-color: cadetblue;
+}
+
+#container-fundo #buttons #button-red {
+  background-color: crimson;
+}
+
+#container-fundo #buttons #button-blue {
+  background-color: darkslateblue;
+}
+
+#container-fundo #buttons #button-black {
+  background-color: black;
+  color: white;
+}
+
 * {
   border: 0;
   -webkit-box-sizing: border-box;

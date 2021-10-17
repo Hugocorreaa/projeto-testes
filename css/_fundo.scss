@@ -1,0 +1,62 @@
+#container-fundo{
+    height: 60vh;
+    padding-top: 200px;
+    text-align: center;
+
+    #name{
+        border: 1px solid black;
+        height: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .verde{
+        background-color: cadetblue;
+
+    }
+
+    .vermelho{
+        background-color: crimson
+
+    }
+
+    .azul{
+        background-color: darkslateblue;
+    }
+
+    #buttons{
+        padding-top: 20px;
+        .button{
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 10px;
+        
+            height: 2rem;
+            width: 10rem;      
+        }
+
+        #button-green{
+            background-color: cadetblue;
+        }
+
+        #button-red{
+            background-color: crimson;
+        }
+
+        #button-blue{
+            background-color: darkslateblue;
+        }
+
+        #button-black{
+            background-color: black;
+            color: white;
+        }
+
+    }
+
+
+}

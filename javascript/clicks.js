@@ -3,6 +3,8 @@ var textInitial = document.getElementsByClassName("texto-cor");
 var textClick = document.getElementsByClassName("texto-click");
 var textDisable = document.getElementsByClassName("texto-cor-desativado");
 
+var background = document.body
+
 for (let x = 0; x < caixa.length; x++) {
   caixa[x].addEventListener("mouseover", hover);
   caixa[x].addEventListener("mouseleave", out);
