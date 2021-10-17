@@ -1,32 +1,38 @@
-var caixaPreta = document.querySelector('#box-black')
-var caixaBranca = document.getElementById('box-white')
-var caixaLaranja = document.getElementById('box-orange')
-var caixaCinza = document.getElementById('box-grey')
+var caixa = document.getElementsByClassName('box')
+var textInitial = document.getElementsByClassName('texto-cor')
+var textClick = document.getElementsByClassName('texto-click')
+var textDisable = document.getElementsByClassName('texto-cor-desativado')
 
-[caixaPreta, caixaBranca, caixaLaranja, caixaCinza].forEach(element => {
-    element.addEventListener("mouseover", hover);
-    element.addEventListener("mouseout", out);
-    element.addEventListener("mousedown", click);
-    element.addEventListener("mouseup", desclick);
-    
-});
+for(let x=0; x<caixa.length; x++){
+    caixa[x].addEventListener('mouseover', hover)
+    caixa[x].addEventListener('mouseleave', out)
+    caixa[x].addEventListener('mousedown', click)
+    caixa[x].addEventListener('mouseup', desclick)
+
+
+}
 
 
 function hover(event){
-    event.target.style.height = "12rem"
-    event.target.style.width = "12rem"
+    this.style.height = "12rem"
+    this.style.width = "12rem"
 }
 
 function out(event){
-    event.target.style.height = "10rem"
-    event.target.style.width = "10rem"
+    this.style.height = "10rem"
+    this.style.width = "10rem"
 }
 
 function click(event){
-    event.target.innerHTML = "Clicou"
+    textDisable[0].style.display = "none"
+    textInitial[0].style.display = "none"
+    textClick[0].style.display = "block"
+
+    
 }
 
 function desclick(event){
-    event.target.innerHTML = "Preto"
+    textClick[0].style.display = "none"
+    textDisable[0].style.display = "block"
 }
 
